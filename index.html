@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Χάρης & Μαρίτα · 12 Σεπτεμβρίου</title>
+<meta name="description" content="Ο γάμος του Χάρη και της Μαρίτας — Σάββατο 12 Σεπτεμβρίου, Ηράκλειο Κρήτης" />
+
+<!-- Fonts: Cormorant Garamond (elegant serif for display), Cormorant SC (small caps), Lato (body) -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Cormorant+SC:wght@300;400;500&family=Lato:wght@300;400;700&family=Pinyon+Script&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- Subtle decorative golden background -->
+<div class="gold-glow gold-glow--top"></div>
+<div class="gold-glow gold-glow--bottom"></div>
+
+<!-- ============== SECTION 1 · THE INVITATION (FLIPPABLE) ============== -->
+<section class="invitation-section" id="invitation">
+
+  <div class="ornament ornament--top">
+    <svg viewBox="0 0 120 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <line x1="0" y1="12" x2="48" y2="12" stroke="currentColor" stroke-width="0.6"/>
+      <circle cx="60" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="0.6"/>
+      <circle cx="60" cy="12" r="0.9" fill="currentColor"/>
+      <line x1="72" y1="12" x2="120" y2="12" stroke="currentColor" stroke-width="0.6"/>
+    </svg>
+  </div>
+
+  <p class="invitation-hint">
+    <span class="hint-text">Πατήστε για να γυρίσετε σελίδα</span>
+    <span class="hint-arrow">↻</span>
+  </p>
+
+  <div class="card-stage">
+    <div class="card-flipper" id="cardFlipper" role="button" tabindex="0" aria-label="Γυρίστε την πρόσκληση">
+      <div class="card-face card-face--front">
+        <img src="images/invitation-front.png" alt="Πρόσκληση γάμου - Μπροστινή όψη" />
+      </div>
+      <div class="card-face card-face--back">
+        <img src="images/invitation-back.png" alt="Πρόσκληση γάμου - Πίσω όψη" />
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-cue">
+    <span>Συνεχίστε</span>
+    <svg viewBox="0 0 24 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <rect x="6" y="2" width="12" height="24" rx="6" fill="none" stroke="currentColor" stroke-width="1"/>
+      <circle cx="12" cy="10" r="1.5" fill="currentColor">
+        <animate attributeName="cy" values="10;18;10" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0;1" dur="2s" repeatCount="indefinite"/>
+      </circle>
+    </svg>
+  </div>
+</section>
+
+<!-- ============== SECTION 2 · THE COUPLE ============== -->
+<section class="couple-section" id="couple">
+  <div class="couple-grid">
+
+    <div class="couple-photo reveal">
+      <div class="photo-frame">
+        <img src="images/couple.jpg" alt="Χάρης & Μαρίτα" id="couplePhoto" />
+        <div class="photo-placeholder" id="couplePlaceholder">
+          <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M30 32c5.5 0 10-4.5 10-10s-4.5-10-10-10-10 4.5-10 10 4.5 10 10 10zm0 4c-7 0-20 3.5-20 10v6h40v-6c0-6.5-13-10-20-10z"
+                  fill="none" stroke="currentColor" stroke-width="1"/>
+          </svg>
+          <p>Ανεβάστε τη φωτογραφία σας<br/><small>images/couple.jpg</small></p>
+        </div>
+        <div class="photo-corner photo-corner--tl"></div>
+        <div class="photo-corner photo-corner--tr"></div>
+        <div class="photo-corner photo-corner--bl"></div>
+        <div class="photo-corner photo-corner--br"></div>
+      </div>
+    </div>
+
+    <div class="couple-text reveal">
+      <p class="eyebrow">Η ιστορία μας</p>
+      <h2 class="section-title">Χάρης <span class="amp">&amp;</span> Μαρίτα</h2>
+      <div class="title-divider"><span></span></div>
+
+      <p class="lead">
+        <span class="dropcap">Ο</span>ι δρόμοι μας συναντήθηκαν, οι καρδιές μας ένωσαν την πορεία τους, και σήμερα ετοιμαζόμαστε να γράψουμε μαζί το πιο όμορφο κεφάλαιο της ζωής μας.
+      </p>
+
+      <p>
+        Σας προσκαλούμε με ιδιαίτερη χαρά να γίνετε μέρος αυτής της ξεχωριστής στιγμής. Η παρουσία σας θα είναι το πιο πολύτιμο δώρο μας — μια ευλογία που θα κρατήσουμε για πάντα στις πιο όμορφες αναμνήσεις της κοινής μας πορείας.
+      </p>
+
+      <p class="signature">— Χάρης &amp; Μαρίτα</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============== SECTION 3 · THE VENUE / MAP ============== -->
+<section class="venue-section" id="venue">
+  <div class="venue-header">
+    <p class="eyebrow">Πού &amp; Πότε</p>
+    <h2 class="section-title">Η Τελετή</h2>
+    <div class="title-divider"><span></span></div>
+  </div>
+
+  <div class="venue-grid">
+
+    <div class="venue-details reveal">
+      <div class="detail-block">
+        <p class="detail-label">Ημερομηνία</p>
+        <p class="detail-value">Σάββατο, 12 Σεπτεμβρίου</p>
+      </div>
+      <div class="detail-block">
+        <p class="detail-label">Ώρα</p>
+        <p class="detail-value">7:00 μ.μ.</p>
+      </div>
+      <div class="detail-block">
+        <p class="detail-label">Ιερός Ναός</p>
+        <p class="detail-value">Εισοδίων της Θεοτόκου</p>
+        <p class="detail-sub">στο Κτήμα Ιππικού Ομίλου</p>
+      </div>
+      <div class="detail-block">
+        <p class="detail-label">Δεξίωση</p>
+        <p class="detail-value">Κτήμα «Φαίδρα»</p>
+        <p class="detail-sub">Ιππικός Όμιλος Ηρακλείου<br/>Καρτερός, Ηράκλειο Κρήτης</p>
+      </div>
+
+      <a class="map-cta" id="mapCta" href="https://www.google.com/maps/dir/?api=1&destination=Ktima+Ippikou+Omilou+Irakleiou,+Filippon+2,+Karteros&destination_place_id=ChIJmY59tgVcmhQRVhOcHAgSUnY" target="_blank" rel="noopener">
+        <span>Οδηγίες στο Google Maps</span>
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="venue-map reveal" id="mapClick" role="button" tabindex="0" aria-label="Άνοιγμα οδηγιών στο Google Maps">
+      <iframe
+        src="https://www.google.com/maps?q=35.3267569,25.1966857&hl=el&z=15&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Χάρτης τοποθεσίας">
+      </iframe>
+      <div class="map-overlay">
+        <div class="pin">
+          <svg viewBox="0 0 40 56" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M20 2C10.6 2 3 9.6 3 19c0 12 17 35 17 35s17-23 17-35C37 9.6 29.4 2 20 2z" fill="var(--gold)" stroke="var(--gold-deep)" stroke-width="1"/>
+            <circle cx="20" cy="19" r="6" fill="#fff"/>
+          </svg>
+        </div>
+        <p class="map-hint">Πατήστε για οδηγίες →</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== SECTION 4 · CONTACT ============== -->
+<section class="contact-section" id="contact">
+  <div class="contact-header">
+    <p class="eyebrow">Επικοινωνία</p>
+    <h2 class="section-title">RSVP</h2>
+    <div class="title-divider"><span></span></div>
+    <p class="contact-intro">
+      Παρακαλούμε επιβεβαιώστε την παρουσία σας έως τις <strong>20 Αυγούστου</strong>.
+    </p>
+  </div>
+
+  <div class="contact-cards">
+
+    <article class="contact-card reveal">
+      <div class="card-monogram">Χ</div>
+      <h3>Χάρης</h3>
+      <a class="contact-link" href="tel:+306942943299">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"
+                fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>6942 943 299</span>
+      </a>
+      <a class="contact-link" href="mailto:xaris@example.com">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                fill="none" stroke="currentColor" stroke-width="1.2"/>
+          <path d="m2 6 10 7 10-7" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>xaris@example.com</span>
+      </a>
+    </article>
+
+    <div class="card-divider">
+      <svg viewBox="0 0 24 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <line x1="12" y1="0" x2="12" y2="100" stroke="currentColor" stroke-width="0.6"/>
+        <circle cx="12" cy="120" r="4" fill="none" stroke="currentColor" stroke-width="0.6"/>
+        <circle cx="12" cy="120" r="1.2" fill="currentColor"/>
+        <line x1="12" y1="140" x2="12" y2="240" stroke="currentColor" stroke-width="0.6"/>
+      </svg>
+    </div>
+
+    <article class="contact-card reveal">
+      <div class="card-monogram">Μ</div>
+      <h3>Μαρίτα</h3>
+      <a class="contact-link" href="tel:+306984258436">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"
+                fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>6984 258 436</span>
+      </a>
+      <a class="contact-link" href="mailto:marita@example.com">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                fill="none" stroke="currentColor" stroke-width="1.2"/>
+          <path d="m2 6 10 7 10-7" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>marita@example.com</span>
+      </a>
+    </article>
+
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-ornament">
+      <svg viewBox="0 0 200 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <line x1="0" y1="12" x2="80" y2="12" stroke="currentColor" stroke-width="0.5"/>
+        <path d="M88 12 Q100 4 112 12 Q100 20 88 12 Z" fill="none" stroke="currentColor" stroke-width="0.5"/>
+        <line x1="120" y1="12" x2="200" y2="12" stroke="currentColor" stroke-width="0.5"/>
+      </svg>
+    </div>
+    <p class="footer-couple">Χάρης &amp; Μαρίτα</p>
+    <p class="footer-date">12 · 09</p>
+  </footer>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

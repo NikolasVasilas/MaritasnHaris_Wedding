@@ -2,6 +2,8 @@
 
 You can find the webpage here: https://nikolasvasilas.github.io/MaritasnHaris_Wedding/
 
+Warning: The development of this website relied heavily on AI tools. Please use it at your own discretion and responsibility.
+
 
 A single-page wedding invitation website with a flippable card, couple photo + story, interactive map with directions, and contact section. White & gold theme.
 

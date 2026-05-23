@@ -638,15 +638,17 @@ section, footer { position: relative; z-index: 1; }
   }
   html { scroll-behavior: auto; }
 }
-.signature-line{
-  font-family: var(--script) !important;
-  font-size: clamp(3.8rem, 7vw, 6rem) !important;
-  text-align: center !important;
-  font-style: normal !important;
-  margin: 2.5rem 0 !important;
-  line-height: 1.3 !important;
-  font-weight: 400 !important;
 
+.signature-line{
+  font-family: var(--script);
+  font-size: clamp(3.8rem, 7vw, 6rem);
+  text-align: center;
+  font-style: normal;
+  margin: 2.5rem 0;
+  line-height: 1.3;
+  font-weight: 400;
+
+  /* Gold gradient fill — varies tone like real ink */
   background: linear-gradient(135deg,
     var(--gold-deep) 0%,
     var(--gold-shimmer) 30%,
@@ -655,11 +657,13 @@ section, footer { position: relative; z-index: 1; }
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: transparent !important;
+  color: transparent;
 
+  /* Soft ink shadow — gives the feather-pen feel */
   filter:
     drop-shadow(0 1px 0 rgba(163, 134, 63, 0.15))
     drop-shadow(0 2px 4px rgba(163, 134, 63, 0.2));
 
-  letter-spacing: 0.02em !important;
+  letter-spacing: 0.02em;
 }
+

@@ -641,7 +641,7 @@ section, footer { position: relative; z-index: 1; }
 
 .signature-line{
   font-family: var(--script);
-  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-size: clamp(3.5rem, 6.5vw, 5.5rem);
   color: var(--gold);
   text-align: center;
   font-style: normal;

@@ -642,7 +642,7 @@ section, footer { position: relative; z-index: 1; }
 p.signature-line,
 .signature-line {
   font-family: "Pinyon Script", cursive !important;
-  font-size: 12rem !important;
+  font-size: 6rem !important;
   color: #c9a96a !important;
   -webkit-text-fill-color: #c9a96a !important;
   background: none !important;

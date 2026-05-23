@@ -639,35 +639,34 @@ section, footer { position: relative; z-index: 1; }
   html { scroll-behavior: auto; }
 }
 
-p.signature-line,
-.signature-line {
+/* === Signature line === */
+p.signature-line {
   font-family: "Pinyon Script", cursive !important;
   font-size: 6rem !important;
   color: #c9a96a !important;
   -webkit-text-fill-color: #c9a96a !important;
-  background: none !important;
   text-align: center !important;
   font-style: normal !important;
   font-weight: 400 !important;
   line-height: 1.2 !important;
   margin: 2.5rem 0 !important;
+  background: none !important;
   filter: none !important;
 }
 
-.signature-line span,
 p.signature-line span {
-  display: inline-block !important;
+  display: inline-block;
   color: #c9a96a !important;
   -webkit-text-fill-color: #c9a96a !important;
+  font-size: inherit !important;
   opacity: 0;
   transition: opacity 0.18s ease;
-  font-size: inherit !important;
 }
 
-.signature-line.writing span {
+p.signature-line span.space {
+  width: 0.3em;
+}
+
+p.signature-line.writing span {
   opacity: 1;
-}
-
-.signature-line span.space {
-  width: 0.3em !important;
 }

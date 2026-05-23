@@ -651,7 +651,7 @@ section, footer { position: relative; z-index: 1; }
 /* === Signature line === */
 p.signature-line {
   font-family: 'GFS Didot', 'Cormorant Garamond', serif !important;
-  font-size: clamp(1.4rem, 5.5vw, 3rem) !important;
+  font-size: clamp(1rem, 4.5vw, 3rem) !important;
   color: #c9a96a !important;
   -webkit-text-fill-color: #c9a96a !important;
   text-align: center !important;

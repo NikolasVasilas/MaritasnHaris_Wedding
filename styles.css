@@ -650,31 +650,33 @@ section, footer { position: relative; z-index: 1; }
 
 /* === Signature line === */
 p.signature-line {
-  font-family: 'Sacramento', cursive !important;
-  font-size: 4.5rem !important;
+  font-family: 'GFS Didot', 'Cormorant Garamond', serif !important;
+  font-size: 3.5rem !important;
   color: #c9a96a !important;
   -webkit-text-fill-color: #c9a96a !important;
   text-align: center !important;
-  font-style: normal !important;
+  font-style: italic !important;
   font-weight: 400 !important;
-  line-height: 1.2 !important;
+  line-height: 1.3 !important;
   margin: 2.5rem 0 !important;
   background: none !important;
   filter: none !important;
+  letter-spacing: 0.02em !important;
 }
 
 p.signature-line span {
   display: inline-block;
-  font-family: 'Sacramento', cursive !important;
+  font-family: 'GFS Didot', 'Cormorant Garamond', serif !important;
   color: #c9a96a !important;
   -webkit-text-fill-color: #c9a96a !important;
   font-size: inherit !important;
+  font-style: italic !important;
   opacity: 0;
   transition: opacity 0.18s ease;
 }
 
 p.signature-line span.space {
-  width: 0.3em;
+  width: 0.25em;
 }
 
 p.signature-line.writing span {

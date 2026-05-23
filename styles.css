@@ -639,34 +639,35 @@ section, footer { position: relative; z-index: 1; }
   html { scroll-behavior: auto; }
 }
 
-.signature-line{
-  font-family: var(--script);
-  font-size: clamp(4.5rem, 8vw, 7rem);
-  color: var(--gold) !important;
-  text-align: center;
-  font-style: normal;
-  font-weight: 400;
-  margin: 2.5rem 0;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-
-  /* Cancel any gradient text effects from before */
+p.signature-line,
+.signature-line {
+  font-family: "Pinyon Script", cursive !important;
+  font-size: 12rem !important;
+  color: #c9a96a !important;
+  -webkit-text-fill-color: #c9a96a !important;
   background: none !important;
-  -webkit-text-fill-color: var(--gold) !important;
-  -webkit-background-clip: initial !important;
-  background-clip: initial !important;
+  text-align: center !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 1.2 !important;
+  margin: 2.5rem 0 !important;
+  filter: none !important;
 }
 
-.signature-line span{
-  display: inline-block;
+.signature-line span,
+p.signature-line span {
+  display: inline-block !important;
+  color: #c9a96a !important;
+  -webkit-text-fill-color: #c9a96a !important;
   opacity: 0;
   transition: opacity 0.18s ease;
+  font-size: inherit !important;
 }
 
-.signature-line span.space{
-  width: 0.25em;
-}
-
-.signature-line.writing span{
+.signature-line.writing span {
   opacity: 1;
+}
+
+.signature-line span.space {
+  width: 0.3em !important;
 }

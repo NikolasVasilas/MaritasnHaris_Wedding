@@ -641,14 +641,14 @@ section, footer { position: relative; z-index: 1; }
 
 /* === Signature line === */
 p.signature-line {
-  font-family: "Great Vibes", "Pinyon Script", cursive !important;
-  font-size: 3.5rem !important;
+  font-family: "Caveat", cursive !important;
+  font-size: 4.5rem !important;
   color: #c9a96a !important;
   -webkit-text-fill-color: #c9a96a !important;
   text-align: center !important;
   font-style: normal !important;
-  font-weight: 400 !important;
-  line-height: 1.4 !important;
+  font-weight: 500 !important;
+  line-height: 1.1 !important;
   margin: 2.5rem 0 !important;
   background: none !important;
   filter: none !important;
@@ -664,7 +664,7 @@ p.signature-line span {
 }
 
 p.signature-line span.space {
-  width: 0.3em;
+  width: 0.25em;
 }
 
 p.signature-line.writing span {

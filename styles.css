@@ -650,3 +650,19 @@ section, footer { position: relative; z-index: 1; }
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
+
+.signature-line span{
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.signature-line span.space{
+  width: 0.25em;
+}
+
+.signature-line.writing span{
+  opacity: 1;
+  transform: translateY(0);
+}

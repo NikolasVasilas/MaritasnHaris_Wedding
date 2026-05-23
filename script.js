@@ -71,3 +71,25 @@ couplePhoto.addEventListener('error', () => {
 
 // Initial check (in case image is cached or already loaded)
 if (couplePhoto.complete) checkCouplePhoto();
+
+// --- Handwriting animation for signature line ---
+const signatureLine = document.getElementById('signatureLine');
+if (signatureLine) {
+  const letters = signatureLine.querySelectorAll('span');
+
+  // Stagger the letter reveals
+  letters.forEach((letter, i) => {
+    letter.style.transitionDelay = `${i * 0.12}s`;
+  });
+
+  const signatureObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        signatureLine.classList.add('writing');
+        signatureObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  signatureObserver.observe(signatureLine);
+}

@@ -79,7 +79,7 @@ if (signatureLine) {
 
   // Stagger the letter reveals
   letters.forEach((letter, i) => {
-    letter.style.transitionDelay = `${i * 0.12}s`;
+    letter.style.transitionDelay = `${i * 0.09}s`;
   });
 
   const signatureObserver = new IntersectionObserver((entries) => {

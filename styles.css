@@ -638,3 +638,14 @@ section, footer { position: relative; z-index: 1; }
   }
   html { scroll-behavior: auto; }
 }
+
+.signature-line{
+  font-family: var(--script);
+  color: var(--gold-deep);
+  font-size: clamp(2.8rem, 5vw, 4rem);
+  text-align: center;
+  font-style: normal;
+  margin: 2rem 0;
+  line-height: 1.2;
+}
+

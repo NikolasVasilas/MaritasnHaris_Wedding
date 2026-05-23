@@ -3,6 +3,17 @@
    Theme: warm ivory + gold leaf
    ============================================================ */
 
+/* Self-hosted Caveat font (ensures consistent rendering everywhere) */
+@font-face {
+  font-family: 'Caveat';
+  src: url('fonts/Caveat-VariableFont_wght.ttf') format('truetype-variations'),
+       url('fonts/Caveat-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0370-03FF, U+1F00-1FFF, U+2000-206F, U+20AC, U+2122;
+}
+
 :root{
   /* Colors */
   --ivory:        #fbf8f3;

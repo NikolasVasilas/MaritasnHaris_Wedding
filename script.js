@@ -7,6 +7,7 @@ const invitationSection = document.getElementById('invitation');
 function reveal() {
   envelope.classList.add('revealed');
   invitationWrapper.classList.add('revealed');
+  document.querySelector('.scroll-cue').classList.add('visible');
 }
 function hide() {
   envelope.classList.remove('revealed');

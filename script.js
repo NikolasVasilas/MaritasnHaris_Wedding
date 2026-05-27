@@ -1,15 +1,20 @@
-/* ============================================================
-   Χάρης & Μαρίτα — interactions
-   ============================================================ */
-
 // --- 1) Card flip + envelope reveal animation ---
 const flipper = document.getElementById('cardFlipper');
+const envelope = document.getElementById('envelope');
 const invitationWrapper = document.getElementById('invitationWrapper');
 const invitationSection = document.getElementById('invitation');
 
-// Reveal on click (still works as before)
+function reveal() {
+  envelope.classList.add('revealed');
+  invitationWrapper.classList.add('revealed');
+}
+function hide() {
+  envelope.classList.remove('revealed');
+  invitationWrapper.classList.remove('revealed');
+  flipper.classList.remove('flipped');
+}
+
 flipper.addEventListener('click', () => {
-  // Only allow flip if the invitation is currently out of the envelope
   if (invitationWrapper.classList.contains('revealed')) {
     flipper.classList.toggle('flipped');
   }
@@ -23,30 +28,21 @@ flipper.addEventListener('keydown', (e) => {
   }
 });
 
-// Initial reveal: 1 second after page load, invitation slides out
 let hasInitiallyRevealed = false;
 window.addEventListener('load', () => {
   setTimeout(() => {
-    invitationWrapper.classList.add('revealed');
+    reveal();
     hasInitiallyRevealed = true;
   }, 1000);
 });
 
-// Scroll behaviour: when the invitation section leaves the viewport,
-// the invitation goes back into the envelope.
-// When it re-enters, it comes back out.
 const sectionObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    if (!hasInitiallyRevealed) return; // wait until initial reveal happened
-
+    if (!hasInitiallyRevealed) return;
     if (entry.isIntersecting && entry.intersectionRatio > 0.4) {
-      // Section is mostly visible → reveal
-      invitationWrapper.classList.add('revealed');
+      reveal();
     } else if (entry.intersectionRatio < 0.2) {
-      // Section is mostly out of view → hide back into envelope
-      invitationWrapper.classList.remove('revealed');
-      // Also un-flip when going back in
-      flipper.classList.remove('flipped');
+      hide();
     }
   });
 }, {

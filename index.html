@@ -37,12 +37,20 @@
   </p>
 
   <div class="card-stage">
-    <div class="card-flipper" id="cardFlipper" role="button" tabindex="0" aria-label="Γυρίστε την πρόσκληση">
-      <div class="card-face card-face--front">
-        <img src="images/invitation-front.png" alt="Πρόσκληση γάμου - Μπροστινή όψη" />
-      </div>
-      <div class="card-face card-face--back">
-        <img src="images/invitation-back.png" alt="Πρόσκληση γάμου - Πίσω όψη" />
+    <!-- The envelope sits behind/in front of the invitation -->
+    <div class="envelope" id="envelope">
+      <img src="images/envelope-front.png" alt="Φάκελος πρόσκλησης" />
+    </div>
+
+    <!-- The invitation slides up out of the envelope -->
+    <div class="invitation-wrapper" id="invitationWrapper">
+      <div class="card-flipper" id="cardFlipper" role="button" tabindex="0" aria-label="Γυρίστε την πρόσκληση">
+        <div class="card-face card-face--front">
+          <img src="images/invitation-front.png" alt="Πρόσκληση γάμου - Μπροστινή όψη" />
+        </div>
+        <div class="card-face card-face--back">
+          <img src="images/invitation-back.png" alt="Πρόσκληση γάμου - Πίσω όψη" />
+        </div>
       </div>
     </div>
   </div>
